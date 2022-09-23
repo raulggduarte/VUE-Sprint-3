@@ -32,20 +32,6 @@
 							 </a>
 						 </li>
 					 </ul>
-					 <ul class="navbar-nav me-3 me-lg-0 d-flex flex-row align-items-center">
-						<li class="dropdown search-dropdown nav-item py-lg-3">						 
-							<a href="javascript:void(0)" class="btn btn-outline-dark flex-center" onclick="generateCart()" type="button">
-							   <i class="fas fa-shopping-cart me-1"></i> Generate Cart <span class="badge bg-dark text-white ms-1 rounded-pill"></span>
-							</a>
-						</li>
-					</ul>
-					<ul class="navbar-nav me-3 me-lg-0 d-flex flex-row align-items-center">
-						<li class="dropdown search-dropdown nav-item py-lg-3">						 
-							<a href="javascript:void(0)" class="btn btn-outline-dark flex-center" onclick="applyPromotionsCart()" type="button">
-							   <i class="fas fa-shopping-cart me-1"></i> Apply Promotions <span class="badge bg-dark text-white ms-1 rounded-pill"></span>
-							</a>
-						</li>
-					</ul>
 				 </div>
 
 				 <div id="navbar" class="navbar-collapse collapse">
@@ -90,7 +76,10 @@
 								</div>
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><button type="button" onclick="buy(1)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center"><button type="button" onclick="addToCart(1)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center mt-2" id="removeBtn1" style="display: none;"><button type="button" onclick="removeFromCart(1)" class="btn btn-outline-dark">Remove from cart
+									<span class="badge bg-dark text-white ms-1 rounded-pill" id="count_product_1">0</span>
+								</button></div>
 							</div>
 						</div>
 					</div>
@@ -104,7 +93,9 @@
 								</div>
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><button type="button" onclick="buy(2)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center"><button type="button" onclick="addToCart(2)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center mt-2" id="removeBtn2" style="display: none;"><button type="button" onclick="removeFromCart(2)" class="btn btn-outline-dark">Remove from cart
+									<span class="badge bg-dark text-white ms-1 rounded-pill" id="count_product_2">0</span></button></div>
 							</div>
 						</div>
 					</div>
@@ -118,7 +109,9 @@
 								</div>
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><button type="button" onclick="buy(3)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center"><button type="button" onclick="addToCart(3)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center mt-2" id="removeBtn3" style="display: none;"><button type="button" onclick="removeFromCart(3)" class="btn btn-outline-dark">Remove from cart
+									<span class="badge bg-dark text-white ms-1 rounded-pill" id="count_product_3">0</span></button></div>
 							</div>
 						</div>
 					</div>
@@ -140,7 +133,9 @@
 								</div>
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><button type="button" onclick="buy(4)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center"><button type="button" onclick="addToCart(4)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center mt-2" id="removeBtn4" style="display: none;"><button type="button" onclick="removeFromCart(4)" class="btn btn-outline-dark">Remove from cart
+									<span class="badge bg-dark text-white ms-1 rounded-pill" id="count_product_4">0</span></button></div>
 							</div>
 						</div>
 					</div>
@@ -154,7 +149,9 @@
 								</div>
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><button type="button" onclick="buy(5)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center"><button type="button" onclick="addToCart(5)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center mt-2" id="removeBtn5" style="display: none;"><button type="button" onclick="removeFromCart(5)" class="btn btn-outline-dark">Remove from cart
+									<span class="badge bg-dark text-white ms-1 rounded-pill" id="count_product_5">0</span></button></div>
 							</div>
 						</div>
 					</div>
@@ -168,7 +165,9 @@
 								</div>
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><button type="button" onclick="buy(6)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center"><button type="button" onclick="addToCart(6)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center mt-2" id="removeBtn6" style="display: none;"><button type="button" onclick="removeFromCart(6)" class="btn btn-outline-dark">Remove from cart
+									<span class="badge bg-dark text-white ms-1 rounded-pill" id="count_product_6">0</span></button></div>
 							</div>
 						</div>
 					</div>
@@ -190,7 +189,9 @@
 								</div>
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><button type="button" onclick="buy(7)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center"><button type="button" onclick="addToCart(7)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center mt-2" id="removeBtn7" style="display: none;"><button type="button" onclick="removeFromCart(7)" class="btn btn-outline-dark">Remove from cart
+									<span class="badge bg-dark text-white ms-1 rounded-pill" id="count_product_7">0</span></button></div>
 							</div>
 						</div>
 					</div>
@@ -204,7 +205,9 @@
 								</div>
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><button type="button" onclick="buy(8)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center"><button type="button" onclick="addToCart(8)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center mt-2" id="removeBtn8" style="display: none;"><button type="button" onclick="removeFromCart(8)" class="btn btn-outline-dark">Remove from cart
+									<span class="badge bg-dark text-white ms-1 rounded-pill" id="count_product_8">0</span></button></div>
 							</div>
 						</div>
 					</div>
@@ -218,7 +221,9 @@
 								</div>
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><button type="button" onclick="buy(9)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center"><button type="button" onclick="addToCart(9)" class="btn btn-outline-dark">Add to cart</button></div>
+								<div class="text-center mt-2" id="removeBtn9" style="display: none;"><button type="button" onclick="removeFromCart(9)" class="btn btn-outline-dark">Remove from cart
+									<span class="badge bg-dark text-white ms-1 rounded-pill" id="count_product_9">0</span></button></div>
 							</div>
 						</div>
 					</div>
