@@ -1,0 +1,14 @@
+section {
+    & h2 {
+        font-family: 'Satisfy', cursive;
+        font-size: calc(3rem + 0.9vw);
+
+        & i {
+            display: none!important;
+        }
+    }
+
+    & button {
+        font-size: 0.8rem!important;
+    }
+}

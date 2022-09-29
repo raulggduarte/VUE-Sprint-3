@@ -1,0 +1,30 @@
+#mainCheckout {
+    & h1 {
+        font-family: 'Satisfy', cursive;
+    }
+
+    & form i {
+        display: none;
+    }
+
+    & .sticker-1 {
+        animation: moveRight 1s ease-in;
+    }
+
+    & .sticker-2 {
+        animation: moveLeft 1s ease-in;
+    }
+
+    & .sticker-3 {
+        animation: moveRight 1s ease-in;
+    }
+
+    & .sticker-4 {
+        animation: moveLeft 1s ease-in;
+    }
+
+    .form button:hover{
+        background-color: rgb(60, 60, 60) !important;
+        color: beige !important;
+    }
+}

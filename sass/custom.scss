@@ -1,0 +1,32 @@
+@import 'config';
+@import 'nav';
+@import 'header';
+@import 'productCarousel';
+@import 'sections';
+@import 'cartModal';
+@import '_headerCheckout';
+@import 'mainCheckout';
+@import 'responsive';
+@import 'keyframes';
+
+//custom variables
+$primary: rgb(104, 155, 249);
+$secondary: rgb(89, 242, 250);
+
+//import the functions & variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  "orange": rgba(254, 109, 5),
+  "grey": #d6d6d6,
+  "primaryBlue": rgb(104, 155, 249),
+  "secondaryBlue": rgb(89, 242, 250),
+  "softYellow": rgb(249, 230, 104),
+  "lemonGrass": rgb(129, 255, 161)
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+//import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";

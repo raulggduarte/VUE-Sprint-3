@@ -1,0 +1,29 @@
+header {
+    height: 400px;
+    background-image: url("../images/portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .text-white {
+        width: 300px!important;
+        text-align: center;
+    }
+
+    & h1 {
+        font-family: 'Satisfy', cursive;
+        font-size: calc(1.5rem + 2.7vw)!important;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    & p {
+        font-family: 'Dosis', sans-serif;
+        font-size: calc(0.8rem + 1.2vw)!important;
+        text-shadow: 2px 2px 5px black;
+    }
+}
+
+#checkoutHeader {
+    height: 300px;
+    background-image: url("../images/portada_checkout.jpg");
+    background-position: center;
+}

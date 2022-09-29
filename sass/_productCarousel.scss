@@ -1,0 +1,11 @@
+#productCarousel {
+    height: 550px;
+
+    h1 {
+        font-family: 'Satisfy', cursive;
+    }
+
+    & img {
+        height: 300px;
+    }
+}
